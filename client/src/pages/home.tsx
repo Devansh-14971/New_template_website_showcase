@@ -66,7 +66,7 @@ export default function HomePage() {
               <br />of Web
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              We're a passionate team of developers creating innovative web solutions that drive business growth and user engagement.
+              {siteSettings.company.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link href="/projects">

@@ -55,9 +55,9 @@ export default function Footer() {
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href}>
-                    <a className="hover:text-white transition-colors duration-200">
+                    <span className="hover:text-white transition-colors duration-200 cursor-pointer">
                       {item.label}
-                    </a>
+                    </span>
                   </Link>
                 </li>
               ))}
