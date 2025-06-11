@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { fetchGitHubProfile } from "@/lib/github";
+import { siteSettings } from "@shared/settings";
 
 interface GitHubUser {
   login: string;
@@ -28,8 +29,7 @@ export default function HomePage() {
     try {
       setLoading(true);
       setError(null);
-      // Replace with your actual GitHub username
-      const data = await fetchGitHubProfile("your-github-username");
+      const data = await fetchGitHubProfile(siteSettings.github.username);
       setGithubData(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to load GitHub profile");
@@ -43,32 +43,7 @@ export default function HomePage() {
     fetchGitHub();
   }, []);
 
-  const teamMembers = [
-    {
-      name: "Alex Johnson",
-      role: "Lead Developer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      description: "Full-stack expert with 8+ years of experience in React and Node.js"
-    },
-    {
-      name: "Sarah Chen",
-      role: "UX/UI Designer",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332c825?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      description: "Creative designer focused on user-centered design and accessibility"
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "Backend Engineer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      description: "DevOps and cloud architecture specialist with AWS and Docker expertise"
-    },
-    {
-      name: "Emma Thompson",
-      role: "Project Manager",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      description: "Agile methodology expert ensuring smooth project delivery and team coordination"
-    }
-  ];
+  const teamMembers = siteSettings.team;
 
   return (
     <>

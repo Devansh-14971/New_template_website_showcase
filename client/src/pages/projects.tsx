@@ -2,52 +2,18 @@ import { ExternalLink, Github, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { siteSettings } from "@shared/settings";
 
 export default function ProjectsPage() {
-  const projects = [
-    {
-      title: "EcoShop Platform",
-      category: "E-commerce",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features real-time inventory, order tracking, and responsive design.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://ecoshop-demo.render.com",
-      githubUrl: "#"
-    },
-    {
-      title: "TaskFlow Dashboard",
-      category: "Productivity",
-      description: "Comprehensive project management tool with real-time collaboration, time tracking, and advanced analytics. Built for remote teams.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Socket.io"],
-      liveUrl: "https://taskflow-app.render.com",
-      githubUrl: "#"
-    },
-    {
-      title: "SocialMetrics Pro",
-      category: "Analytics",
-      description: "Advanced social media analytics platform with AI-powered insights, automated reporting, and multi-platform integration.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["Next.js", "Python", "Redis", "TensorFlow"],
-      liveUrl: "https://socialmetrics-pro.render.com",
-      githubUrl: "#"
-    },
-    {
-      title: "FitTracker Mobile",
-      category: "Health",
-      description: "Comprehensive fitness tracking app with workout plans, nutrition tracking, and progress analytics. PWA with offline capabilities.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["React Native", "Express", "PostgreSQL", "PWA"],
-      liveUrl: "https://fittracker-mobile.render.com",
-      githubUrl: "#"
-    }
-  ];
+  const projects = siteSettings.projects;
 
   const categoryColors = {
     "E-commerce": "bg-emerald-100 text-emerald-800",
     "Productivity": "bg-blue-100 text-blue-800",
     "Analytics": "bg-purple-100 text-purple-800",
-    "Health": "bg-green-100 text-green-800"
+    "Health": "bg-green-100 text-green-800",
+    "Finance": "bg-yellow-100 text-yellow-800",
+    "Data Visualization": "bg-indigo-100 text-indigo-800"
   };
 
   const techColors = [

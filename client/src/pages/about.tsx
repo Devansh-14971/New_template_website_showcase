@@ -1,51 +1,9 @@
 import { Lightbulb, Handshake, Star, Linkedin, Github, Twitter, Dribbble } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { siteSettings } from "@shared/settings";
 
 export default function AboutPage() {
-  const teamMembers = [
-    {
-      name: "Alex Johnson",
-      role: "Lead Developer & Co-Founder",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-      bio: "With over 8 years of experience in full-stack development, Alex leads our technical vision and ensures we deliver scalable, maintainable solutions. Specializes in React, Node.js, and cloud architecture.",
-      socials: {
-        linkedin: "#",
-        github: "#",
-        twitter: "#"
-      }
-    },
-    {
-      name: "Sarah Chen",
-      role: "UX/UI Designer & Co-Founder",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332c825?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-      bio: "Sarah brings 6+ years of design expertise to create intuitive and beautiful user experiences. She's passionate about accessibility and user research, ensuring our products work for everyone.",
-      socials: {
-        linkedin: "#",
-        dribbble: "#",
-        behance: "#"
-      }
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "Backend Engineer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-      bio: "Marcus is our go-to expert for backend systems and DevOps. With extensive experience in AWS, Docker, and microservices, he ensures our applications are robust, scalable, and secure.",
-      socials: {
-        linkedin: "#",
-        github: "#"
-      }
-    },
-    {
-      name: "Emma Thompson",
-      role: "Project Manager",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-      bio: "Emma keeps our projects on track and our team in sync. With her Agile expertise and excellent communication skills, she ensures smooth delivery and client satisfaction.",
-      socials: {
-        linkedin: "#",
-        twitter: "#"
-      }
-    }
-  ];
+  const teamMembers = siteSettings.team;
 
   const values = [
     {

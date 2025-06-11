@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { siteSettings } from "@shared/settings";
 
 export default function Navigation() {
   const [location] = useLocation();
