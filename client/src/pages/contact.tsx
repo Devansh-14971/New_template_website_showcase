@@ -12,6 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
+import { siteSettings } from "@shared/settings";
 
 const contactFormSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -72,28 +73,28 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      details: ["hello@devteampro.com", "projects@devteampro.com"],
+      details: [siteSettings.company.email, siteSettings.company.projectsEmail],
       color: "bg-blue-100 text-blue-500"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "Mon-Fri, 9AM-6PM EST"],
+      details: [siteSettings.company.phone, "Mon-Fri, 9AM-6PM EST"],
       color: "bg-emerald-100 text-emerald-500"
     },
     {
       icon: MapPin,
       title: "Office",
-      details: ["123 Innovation Drive", "San Francisco, CA 94105"],
+      details: [siteSettings.company.address.street, `${siteSettings.company.address.city}, ${siteSettings.company.address.state} ${siteSettings.company.address.zip}`],
       color: "bg-purple-100 text-purple-500"
     }
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", hoverColor: "hover:bg-blue-500" },
-    { icon: Github, href: "#", hoverColor: "hover:bg-slate-900" },
-    { icon: Twitter, href: "#", hoverColor: "hover:bg-blue-400" },
-    { icon: Dribbble, href: "#", hoverColor: "hover:bg-pink-500" }
+    { icon: Linkedin, href: siteSettings.social.linkedin, hoverColor: "hover:bg-blue-500" },
+    { icon: Github, href: siteSettings.social.github, hoverColor: "hover:bg-slate-900" },
+    { icon: Twitter, href: siteSettings.social.twitter, hoverColor: "hover:bg-blue-400" },
+    { icon: Dribbble, href: siteSettings.social.dribbble, hoverColor: "hover:bg-pink-500" }
   ];
 
   if (isSubmitted) {

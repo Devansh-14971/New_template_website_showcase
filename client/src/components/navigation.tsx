@@ -28,7 +28,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <h1 className="text-2xl font-bold text-slate-900 cursor-pointer">
-                DevTeam<span className="text-blue-500">Pro</span>
+                {siteSettings.company.name.split(' ')[0]}<span className="text-blue-500">{siteSettings.company.name.split(' ')[1]}</span>
               </h1>
             </Link>
           </div>
@@ -38,15 +38,15 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
-                  <a
-                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  <span
+                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 cursor-pointer ${
                       isActive(item.href)
                         ? "text-blue-500 font-semibold"
                         : "text-slate-700 hover:text-blue-500"
                     }`}
                   >
                     {item.label}
-                  </a>
+                  </span>
                 </Link>
               ))}
             </div>
@@ -76,8 +76,8 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a
-                  className={`block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 ${
+                <span
+                  className={`block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 cursor-pointer ${
                     isActive(item.href)
                       ? "text-blue-500 bg-blue-50"
                       : "text-slate-700 hover:text-blue-500 hover:bg-slate-50"
@@ -85,7 +85,7 @@ export default function Navigation() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </span>
               </Link>
             ))}
           </div>
