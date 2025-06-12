@@ -12,7 +12,7 @@ interface GitHubUser {
 }
 
 export async function fetchGitHubProfile(username: string): Promise<GitHubUser> {
-  const response = await fetch(`/api/github/${username}`);
+  const response = await fetch(`https://api.github.com/users/${username}`);
   
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
