@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { ExternalLink, Github, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -107,10 +108,15 @@ export default function ProjectsPage() {
               <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                 Let's collaborate to bring your vision to life with cutting-edge technology and exceptional design.
               </p>
-              <Button className="bg-white text-blue-500 px-8 py-4 font-bold text-lg hover:bg-blue-50 transition-colors duration-200 transform hover:scale-105">
-                <Rocket className="mr-2 h-5 w-5" />
-                Start Your Project
-              </Button>
+              <Link href="/contact">
+                <Button 
+                  className="bg-white text-blue-500 px-8 py-4 font-bold text-lg hover:bg-blue-50 transition-colors duration-200 transform hover:scale-105"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
+                  <Rocket className="mr-2 h-5 w-5" />
+                  Start Your Project
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
