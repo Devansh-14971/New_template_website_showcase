@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -29,6 +29,11 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
 export default function ContactPage() {
   const { toast } = useToast();
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Scroll to top when component mounts (handles navigation from other pages)
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),

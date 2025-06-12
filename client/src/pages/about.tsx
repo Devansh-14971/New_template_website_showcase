@@ -1,9 +1,15 @@
+import { useEffect } from "react";
 import { Lightbulb, Handshake, Star, Linkedin, Github, Twitter, Dribbble } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { siteSettings } from "@shared/settings";
 
 export default function AboutPage() {
   const teamMembers = siteSettings.team;
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const values = [
     {

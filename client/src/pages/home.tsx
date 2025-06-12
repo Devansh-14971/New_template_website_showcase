@@ -25,6 +25,11 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   const fetchGitHub = async () => {
     try {
       setLoading(true);
@@ -211,7 +216,10 @@ export default function HomePage() {
 
           <div className="text-center">
             <Link href="/about">
-              <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 font-semibold">
+              <Button 
+                className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 font-semibold"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
                 <Users className="mr-2 h-5 w-5" />
                 Learn More About Us
               </Button>

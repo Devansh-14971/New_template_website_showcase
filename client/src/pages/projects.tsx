@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { ExternalLink, Github, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,11 @@ import { siteSettings } from "@shared/settings";
 
 export default function ProjectsPage() {
   const projects = siteSettings.projects;
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const categoryColors = {
     "E-commerce": "bg-emerald-100 text-emerald-800",
