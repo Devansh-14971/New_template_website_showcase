@@ -83,7 +83,10 @@ export default function Navigation() {
                       ? "text-blue-500 bg-blue-50"
                       : "text-slate-700 hover:text-blue-500 hover:bg-slate-50"
                   }`}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                 >
                   {item.label}
                 </span>

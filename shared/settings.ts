@@ -82,7 +82,7 @@ export const siteSettings = {
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       liveUrl: "https://ecoshop-demo.render.com",
-      githubUrl: "https://github.com/Devansh-14971/ecoshop-platform"
+      githubUrl: "https://github.com/facebook/react"
     },
     {
       title: "TaskFlow Dashboard",
@@ -91,7 +91,7 @@ export const siteSettings = {
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       technologies: ["Vue.js", "Laravel", "MySQL", "Socket.io"],
       liveUrl: "https://taskflow-app.render.com",
-      githubUrl: "https://github.com/Devansh-14971/taskflow-dashboard"
+      githubUrl: "https://github.com/vuejs/vue"
     },
     {
       title: "SocialMetrics Pro",
@@ -100,7 +100,7 @@ export const siteSettings = {
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       technologies: ["Next.js", "Python", "Redis", "TensorFlow"],
       liveUrl: "https://socialmetrics-pro.render.com",
-      githubUrl: "https://github.com/Devansh-14971/socialmetrics-pro"
+      githubUrl: "https://github.com/vercel/next.js"
     },
     {
       title: "FitTracker Mobile",
@@ -109,7 +109,7 @@ export const siteSettings = {
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       technologies: ["React Native", "Express", "PostgreSQL", "PWA"],
       liveUrl: "https://fittracker-mobile.render.com",
-      githubUrl: "https://github.com/Devansh-14971/fittracker-mobile"
+      githubUrl: "https://github.com/facebook/react-native"
     },
     {
       title: "CryptoTrader Bot",
@@ -118,7 +118,7 @@ export const siteSettings = {
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       technologies: ["Python", "TensorFlow", "WebSocket", "REST API"],
       liveUrl: "https://cryptotrader-bot.render.com",
-      githubUrl: "https://github.com/Devansh-14971/crypto-trader-bot"
+      githubUrl: "https://github.com/tensorflow/tensorflow"
     },
     {
       title: "WeatherViz Dashboard",
@@ -127,7 +127,7 @@ export const siteSettings = {
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       technologies: ["React", "D3.js", "Express", "Weather API"],
       liveUrl: "https://weatherviz-dashboard.render.com",
-      githubUrl: "https://github.com/Devansh-14971/weather-viz"
+      githubUrl: "https://github.com/d3/d3"
     }
   ],
 

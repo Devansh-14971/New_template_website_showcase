@@ -76,7 +76,7 @@ export default function HomePage() {
                 </Button>
               </Link>
               <Link href="/about">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
                   <Users className="mr-2 h-5 w-5" />
                   Meet the Team
                 </Button>
