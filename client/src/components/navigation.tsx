@@ -44,6 +44,7 @@ export default function Navigation() {
                         ? "text-blue-500 font-semibold"
                         : "text-slate-700 hover:text-blue-500"
                     }`}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
                     {item.label}
                   </span>

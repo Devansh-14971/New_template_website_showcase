@@ -13,6 +13,7 @@ export const siteSettings = {
     description: "Creating exceptional web experiences that drive business growth and user engagement.",
     email: "hello@devteampro.com",
     projectsEmail: "projects@devteampro.com",
+    contactFormRecipient: "contact@devteampro.com",
     phone: "+1 (555) 123-4567",
     address: {
       street: "123 Innovation Drive",

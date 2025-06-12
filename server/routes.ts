@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
+import { sendContactEmail } from "./email";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -9,8 +10,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/contact", async (req, res) => {
     try {
       const validatedData = insertContactSchema.parse(req.body);
+      
+      // Send email notification
+      const emailSent = await sendContactEmail(validatedData);
+      
+      // Store in database
       const contact = await storage.createContact(validatedData);
-      res.json({ success: true, contact });
+      
+      res.json({ 
+        success: true, 
+        contact,
+        emailSent 
+      });
     } catch (error) {
       if (error instanceof z.ZodError) {
         res.status(400).json({ 
