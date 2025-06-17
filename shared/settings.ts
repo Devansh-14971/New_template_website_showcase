@@ -30,7 +30,7 @@ export const siteSettings = {
       role: "Lead Developer",
       image: "https://live.staticflickr.com/65535/54595066637_94a30764d3_w.jpg",
       bio: "Full-stack developer with expertise in React, Node.js, and modern web technologies. Passionate about creating scalable solutions and leading innovative projects.",
-      description: "Full-stack expert with 5+ years of experience in React and Node.js",
+      description: "Full-stack and Development expert with 2+ years of experience in Python, React and Node.js",
       socials: {
         linkedin: "www.linkedin.com/in/devansh-banga-272147265",
         github: "https://github.com/Devansh-14971",
