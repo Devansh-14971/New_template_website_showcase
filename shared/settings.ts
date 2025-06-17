@@ -56,8 +56,8 @@ export const siteSettings = {
       description: "Hyperbolic is a refined Shopify storefront designed to elevate luxury fashion online. Its deep purple theme and bold typography create a distinctive identity, while smooth navigation, responsive layouts, and curated product showcases provide an intuitive shopping experience. With an integrated payment gateway, real-time pricing, and secure checkout, the site balances style and functionality. Every element—from layout to color selection—conveys modern elegance, serving as both a functional eCommerce platform and a stylistic demonstration of thoughtful, polished web development.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["React", "Node.js", "HTML"],
-      liveUrl: "https://ecoshop-demo.render.com",
-      githubUrl: "https://github.com/facebook/react"
+      liveUrl: "https://egfw45-qa.myshopify.com/",
+      githubUrl: "N/a"
     },
     {
       title: "Get Quote",
@@ -65,8 +65,8 @@ export const siteSettings = {
       description: "A basic 'Get Quote' website streamlines customer inquiries by letting visitors quickly request pricing or service estimates. It enhances lead generation, showcases professionalism, and reduces response time with automated forms. By collecting key details like service type, quantity, and contact info, it empowers businesses to respond faster, close more deals, and build trust. It can also integrate with CRMs, trigger email alerts, and offer analytics to improve conversion rates. Whether you're a startup or a growing enterprise, it turns interest into opportunity—efficiently.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["React", "Node.js", "HTML"],
-      liveUrl: "https://taskflow-app.render.com",
-      githubUrl: "https://github.com/vuejs/vue"
+      liveUrl: "https://website-template-7ohi.onrender.com",
+      githubUrl: "https://github.com/Devansh-14971/Present"
     },
     {
       title: "Get Quote",
@@ -75,7 +75,7 @@ export const siteSettings = {
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["React", "Node.js", "HTML"],
       liveUrl: "https://socialmetrics-pro.render.com",
-      githubUrl: "https://github.com/vercel/next.js"
+      githubUrl: "https://github.com/Devansh-14971/Website_template"
     }
   ],
 
