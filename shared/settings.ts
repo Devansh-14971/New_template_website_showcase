@@ -74,7 +74,7 @@ export const siteSettings = {
       description: "A pharmacy 'Get Quote' website lets customers request prices for medicines or bulk orders quickly. It boosts trust, speeds up response time, and captures key details like dosage and quantity. Integrated alerts and CRM tools help pharmacies serve better, convert leads, and manage orders efficiently.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["React", "Node.js", "HTML"],
-      liveUrl: "https://socialmetrics-pro.render.com",
+      liveUrl: "https://website-template-2.onrender.com/",
       githubUrl: "https://github.com/Devansh-14971/Website_template"
     }
   ],
