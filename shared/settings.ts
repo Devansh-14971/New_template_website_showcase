@@ -26,117 +26,63 @@ export const siteSettings = {
   // Team Members
   team: [
     {
-      name: "Devansh Patel",
-      role: "Lead Developer & Founder",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+      name: "Devansh Banga",
+      role: "Lead Developer",
+      image: "https://live.staticflickr.com/65535/54595996573_844f838da6_w.jpg",
       bio: "Full-stack developer with expertise in React, Node.js, and modern web technologies. Passionate about creating scalable solutions and leading innovative projects.",
       description: "Full-stack expert with 5+ years of experience in React and Node.js",
       socials: {
-        linkedin: "https://linkedin.com/in/devansh-patel",
+        linkedin: "www.linkedin.com/in/devansh-banga-272147265",
         github: "https://github.com/Devansh-14971",
-        twitter: "https://twitter.com/devansh_dev"
       }
     },
     {
-      name: "Sarah Chen",
+      name: "Rounak Banga",
       role: "UX/UI Designer",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332c825?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+      image: "https://live.staticflickr.com/65535/54595996833_0766e9c1b3_z.jpg",
       bio: "Creative designer focused on user-centered design and accessibility. Specializes in creating intuitive interfaces that enhance user experience and drive engagement.",
       description: "Creative designer focused on user-centered design and accessibility",
       socials: {
-        linkedin: "https://linkedin.com/in/sarah-chen-design",
-        dribbble: "https://dribbble.com/sarahchen",
-        behance: "https://behance.net/sarahchen"
+        linkedin: "https://www.linkedin.com/in/rounak-banga-7983b9330",
       }
     },
-    {
-      name: "Marcus Rodriguez",
-      role: "Backend Engineer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      bio: "Backend specialist with extensive experience in cloud architecture and DevOps. Expert in building scalable, secure systems using modern technologies and best practices.",
-      description: "DevOps and cloud architecture specialist with AWS and Docker expertise",
-      socials: {
-        linkedin: "https://linkedin.com/in/marcus-rodriguez",
-        github: "https://github.com/marcus-dev"
-      }
-    },
-    {
-      name: "Emma Thompson",
-      role: "Project Manager",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      bio: "Experienced project manager specializing in Agile methodologies. Ensures smooth project delivery and excellent client communication throughout the development process.",
-      description: "Agile methodology expert ensuring smooth project delivery and team coordination",
-      socials: {
-        linkedin: "https://linkedin.com/in/emma-thompson-pm",
-        twitter: "https://twitter.com/emma_pm_pro"
-      }
-    }
   ],
 
   // Projects Portfolio
   projects: [
     {
-      title: "EcoShop Platform",
-      category: "E-commerce",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features real-time inventory, order tracking, and responsive design.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Hyperbolic Web Store",
+      category: "Shopify based E-commerce",
+      description: "Hyperbolic is a refined Shopify storefront designed to elevate luxury fashion online. Its deep purple theme and bold typography create a distinctive identity, while smooth navigation, responsive layouts, and curated product showcases provide an intuitive shopping experience. With an integrated payment gateway, real-time pricing, and secure checkout, the site balances style and functionality. Every element—from layout to color selection—conveys modern elegance, serving as both a functional eCommerce platform and a stylistic demonstration of thoughtful, polished web development.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technologies: ["React", "Node.js", "HTML"],
       liveUrl: "https://ecoshop-demo.render.com",
       githubUrl: "https://github.com/facebook/react"
     },
     {
-      title: "TaskFlow Dashboard",
-      category: "Productivity",
-      description: "Comprehensive project management tool with real-time collaboration, time tracking, and advanced analytics. Built for remote teams.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Socket.io"],
+      title: "Get Quote",
+      category: "Industrial E-commerce",
+      description: "A basic 'Get Quote' website streamlines customer inquiries by letting visitors quickly request pricing or service estimates. It enhances lead generation, showcases professionalism, and reduces response time with automated forms. By collecting key details like service type, quantity, and contact info, it empowers businesses to respond faster, close more deals, and build trust. It can also integrate with CRMs, trigger email alerts, and offer analytics to improve conversion rates. Whether you're a startup or a growing enterprise, it turns interest into opportunity—efficiently.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technologies: ["React", "Node.js", "HTML"],
       liveUrl: "https://taskflow-app.render.com",
       githubUrl: "https://github.com/vuejs/vue"
     },
     {
-      title: "SocialMetrics Pro",
-      category: "Analytics",
-      description: "Advanced social media analytics platform with AI-powered insights, automated reporting, and multi-platform integration.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["Next.js", "Python", "Redis", "TensorFlow"],
+      title: "Get Quote",
+      category: "Pharmaceuticals E-commerce",
+      description: "A pharmacy 'Get Quote' website lets customers request prices for medicines or bulk orders quickly. It boosts trust, speeds up response time, and captures key details like dosage and quantity. Integrated alerts and CRM tools help pharmacies serve better, convert leads, and manage orders efficiently.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technologies: ["React", "Node.js", "HTML"],
       liveUrl: "https://socialmetrics-pro.render.com",
       githubUrl: "https://github.com/vercel/next.js"
-    },
-    {
-      title: "FitTracker Mobile",
-      category: "Health",
-      description: "Comprehensive fitness tracking app with workout plans, nutrition tracking, and progress analytics. PWA with offline capabilities.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["React Native", "Express", "PostgreSQL", "PWA"],
-      liveUrl: "https://fittracker-mobile.render.com",
-      githubUrl: "https://github.com/facebook/react-native"
-    },
-    {
-      title: "CryptoTrader Bot",
-      category: "Finance",
-      description: "Automated cryptocurrency trading bot with machine learning algorithms, risk management, and real-time market analysis.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["Python", "TensorFlow", "WebSocket", "REST API"],
-      liveUrl: "https://cryptotrader-bot.render.com",
-      githubUrl: "https://github.com/tensorflow/tensorflow"
-    },
-    {
-      title: "WeatherViz Dashboard",
-      category: "Data Visualization",
-      description: "Interactive weather visualization dashboard with real-time data, forecasting, and beautiful charts. Features location-based weather tracking.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      technologies: ["React", "D3.js", "Express", "Weather API"],
-      liveUrl: "https://weatherviz-dashboard.render.com",
-      githubUrl: "https://github.com/d3/d3"
     }
   ],
 
   // Social Media Links
   social: {
-    linkedin: "https://linkedin.com/company/devteampro",
+    linkedin: "www.linkedin.com/in/devansh-banga-272147265",
     github: "https://github.com/Devansh-14971",
-    twitter: "https://twitter.com/devteampro",
-    dribbble: "https://dribbble.com/devteampro"
   },
 
   // Services

@@ -16,11 +16,6 @@ export default function ProjectsPage() {
 
   const categoryColors = {
     "E-commerce": "bg-emerald-100 text-emerald-800",
-    "Productivity": "bg-blue-100 text-blue-800",
-    "Analytics": "bg-purple-100 text-purple-800",
-    "Health": "bg-green-100 text-green-800",
-    "Finance": "bg-yellow-100 text-yellow-800",
-    "Data Visualization": "bg-indigo-100 text-indigo-800"
   };
 
   const techColors = [
