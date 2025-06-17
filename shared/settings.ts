@@ -28,7 +28,7 @@ export const siteSettings = {
     {
       name: "Devansh Banga",
       role: "Lead Developer",
-      image: "https://live.staticflickr.com/65535/54595996573_844f838da6_w.jpg",
+      image: "https://live.staticflickr.com/65535/54595066637_94a30764d3_w.jpg",
       bio: "Full-stack developer with expertise in React, Node.js, and modern web technologies. Passionate about creating scalable solutions and leading innovative projects.",
       description: "Full-stack expert with 5+ years of experience in React and Node.js",
       socials: {
@@ -39,7 +39,7 @@ export const siteSettings = {
     {
       name: "Rounak Banga",
       role: "UX/UI Designer",
-      image: "https://live.staticflickr.com/65535/54595996833_0766e9c1b3_z.jpg",
+      image: "https://live.staticflickr.com/65535/54595066647_9bdc82a1cf_z.jpg",
       bio: "Creative designer focused on user-centered design and accessibility. Specializes in creating intuitive interfaces that enhance user experience and drive engagement.",
       description: "Creative designer focused on user-centered design and accessibility",
       socials: {
