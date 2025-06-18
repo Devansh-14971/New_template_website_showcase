@@ -32,7 +32,7 @@ export const siteSettings = {
       bio: "Full-stack developer with expertise in React, Node.js, and modern web technologies. Passionate about creating scalable solutions and leading innovative projects.",
       description: "Full-stack and Development expert with 2+ years of experience in Python, React and Node.js",
       socials: {
-        linkedin: "www.linkedin.com/in/devansh-banga-272147265",
+        linkedin: "https://www.linkedin.com/in/devansh-banga-272147265",
         github: "https://github.com/Devansh-14971",
       }
     },
